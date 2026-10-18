@@ -1,14 +1,75 @@
-/* Задание 4: только структурные стили, без финального дизайна. */
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Arial, sans-serif; line-height: 1.5; }
-.site-header, .site-footer, main > section { padding: 1.5rem max(1rem, calc((100% - 1100px) / 2)); }
-.site-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
-.brand { margin: 0; font-size: 1.5rem; font-weight: bold; }
-.nav-list { display: flex; flex-wrap: wrap; gap: 1rem; list-style: none; margin: 0; padding: 0; }
-.hero { min-height: 280px; display: flex; flex-direction: column; justify-content: center; }
-.hero h1 { max-width: 700px; }
-.actions { display: flex; flex-wrap: wrap; gap: 1rem; }
-.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 1rem; padding: 0; list-style: none; }
-.card { border: 1px solid #bbb; padding: 1rem; height: 100%; }
-.card h3 { margin-top: 0; }
-address { font-style: normal; }
+:root {
+  --paper: #f6f2ee;
+  --ink: #28231f;
+  --muted: #665a51;
+  --wood: #925022;
+  --wood-light: #c99b70;
+  --border: #e1d8d0;
+  --container: 1340px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.55 Arial, Helvetica, sans-serif; }
+a { color: inherit; }
+a:focus-visible { outline: 3px solid var(--wood-light); outline-offset: 4px; }
+img { display: block; max-width: 100%; }
+.site-header { max-width: var(--container); margin: auto; padding: 17px 24px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.brand, .footer-brand { margin: 0; white-space: nowrap; font: 700 clamp(1.55rem, 2.6vw, 2rem)/1.2 Georgia, serif; }
+.brand a, .footer-brand a { text-decoration: none; }
+.nav-list { display: flex; flex-wrap: wrap; gap: clamp(12px, 2.8vw, 38px); align-items: center; list-style: none; margin: 0; padding: 0; }
+.nav-list a { text-decoration: none; }
+.nav-list a:hover, .nav-list a[aria-current="page"] { color: var(--wood); }
+.header-phone { white-space: nowrap; text-decoration: none; }
+main > section:not(.hero) { max-width: var(--container); margin-inline: auto; padding: 38px 12px; }
+.hero { min-height: 455px; padding: 65px max(24px, calc((100vw - var(--container)) / 2 + 24px)); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; color: #fff; background: linear-gradient(90deg, rgba(20,18,14,.84), rgba(20,18,14,.55) 55%, rgba(20,18,14,.15)), url('../assets/images/hero-reference.png') center 46% / cover no-repeat; }
+.hero h1 { font-size: clamp(2.1rem, 5.3vw, 4rem); line-height: 1.18; letter-spacing: -.02em; max-width: 760px; font-weight: 400; margin: 0 0 18px; }
+.hero > p:not(.actions) { max-width: 470px; margin: 0 0 35px; }
+.actions { display: flex; flex-wrap: wrap; gap: 14px; margin: 0; }
+.button { display: inline-flex; justify-content: center; align-items: center; min-height: 46px; padding: 10px 20px; border-radius: 7px; font-weight: 700; text-decoration: none; }
+.button-primary { background: var(--wood); color: white; }
+.button-secondary { background: var(--paper); color: #5a341e; }
+.button:hover { filter: brightness(.92); }
+main h2 { font-size: clamp(1.7rem, 3vw, 2.35rem); line-height: 1.25; text-align: center; margin: 0 0 36px; }
+.catalog-preview h2::after, .offers-preview h2::after { content: ''; display: block; width: 42px; height: 2px; background: #a57c65; margin: 16px auto 0; }
+.card-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; list-style: none; padding: 0; margin: 0; }
+.card { background: #fffaf6; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 3px rgba(39,29,22,.16); display: flex; flex-direction: column; justify-content: flex-start; height: 100%; padding-bottom: 18px; }
+.card-image { width: 100%; aspect-ratio: 1.25; object-fit: cover; }
+.card h3 { margin: 14px 16px 2px; font-size: 1.05rem; }
+.card p { margin: 5px 16px; color: var(--muted); font-size: .92rem; }
+.card a { display: inline-block; margin: auto 16px 0; color: var(--wood); font-weight: 700; text-underline-offset: 3px; }
+.about-section { border-top: 1px solid var(--border); }
+.about-section p { max-width: 750px; margin: auto; text-align: center; }
+.site-footer { background: linear-gradient(rgba(17,11,8,.72), rgba(17,11,8,.8)), url('../assets/images/wood-texture.png') center / cover; color: #fff; padding: 44px max(24px, calc((100vw - var(--container)) / 2 + 24px)); display: grid; grid-template-columns: 1fr 1.5fr 1fr; gap: 26px; align-items: center; }
+.site-footer section { grid-column: 3; grid-row: 1; }
+.site-footer h2 { font-size: 1.05rem; margin: 0 0 8px; }
+.site-footer section p { font-size: .8rem; color: #e6dcd4; }
+.site-footer address { font-style: normal; }
+.site-footer address a { color: #fff; }
+.site-footer nav { grid-column: 2; grid-row: 1; }
+.site-footer .nav-list { gap: 14px; }
+.site-footer .nav-list a:hover { color: #e9c5a6; }
+.site-footer > p:last-child { grid-column: 1 / -1; margin: 0; font-size: .8rem; color: #e4d7cc; }
+@media (max-width: 900px) {
+  .site-header { flex-wrap: wrap; justify-content: center; gap: 14px 24px; }
+  .site-nav { order: 3; width: 100%; }
+  .site-nav .nav-list { justify-content: center; }
+  .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .site-footer { grid-template-columns: 1fr 1fr; }
+  .site-footer section { grid-column: 2; }
+  .site-footer nav { grid-column: 1 / -1; grid-row: 2; }
+}
+@media (max-width: 560px) {
+  .site-header { padding: 16px; }
+  .header-phone { font-size: .9rem; }
+  .nav-list { justify-content: center; gap: 10px 18px; font-size: .92rem; }
+  .hero { min-height: 420px; padding: 52px 20px; }
+  .hero h1 { font-size: clamp(2rem, 8vw, 2.75rem); }
+  .actions { width: 100%; }
+  .button { width: 100%; }
+  main > section:not(.hero) { padding: 32px 16px; }
+  .card-grid { grid-template-columns: 1fr; gap: 18px; }
+  .card-image { aspect-ratio: 1.65; }
+  .site-footer { padding: 34px 20px; display: flex; flex-direction: column; align-items: flex-start; }
+  .site-footer .nav-list { justify-content: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
