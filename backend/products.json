@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "name": "Беседка «Классическая»",
+    "category": "Беседки",
+    "material": "Сосна",
+    "materials": [
+      "Сосна",
+      "Берёза",
+      "Лиственница",
+      "Дуб",
+      "Бук"
+    ],
+    "base_price": 85000,
+    "description": "Уютная открытая беседка из натурального дерева для сада и дачи.",
+    "dimensions": {
+      "length": 3000,
+      "width": 3000,
+      "height": 2500
+    },
+    "image": "/assets/images/category-reference.png"
+  },
+  {
+    "id": 2,
+    "name": "Беседка «Лофт»",
+    "category": "Беседки",
+    "material": "Лиственница",
+    "materials": [
+      "Сосна",
+      "Берёза",
+      "Лиственница",
+      "Дуб",
+      "Бук"
+    ],
+    "base_price": 120000,
+    "description": "Современная деревянная беседка с лаконичной геометрией.",
+    "dimensions": {
+      "length": 3000,
+      "width": 3000,
+      "height": 2500
+    },
+    "image": "/assets/images/category-reference.png"
+  },
+  {
+    "id": 3,
+    "name": "Дверь из массива",
+    "category": "Двери",
+    "material": "Дуб",
+    "materials": [
+      "Сосна",
+      "Берёза",
+      "Лиственница",
+      "Дуб",
+      "Бук"
+    ],
+    "base_price": 45000,
+    "description": "Прочная деревянная дверь с естественной текстурой массива.",
+    "dimensions": {
+      "length": 3000,
+      "width": 3000,
+      "height": 2500
+    },
+    "image": "/assets/images/hero-reference.png"
+  },
+  {
+    "id": 4,
+    "name": "Окно деревянное",
+    "category": "Окна",
+    "material": "Сосна",
+    "materials": [
+      "Сосна",
+      "Берёза",
+      "Лиственница",
+      "Дуб",
+      "Бук"
+    ],
+    "base_price": 30000,
+    "description": "Тёплое деревянное окно для дома или дачи.",
+    "dimensions": {
+      "length": 3000,
+      "width": 3000,
+      "height": 2500
+    },
+    "image": "/assets/images/hero-reference.png"
+  },
+  {
+    "id": 5,
+    "name": "Лестница «Классика»",
+    "category": "Лестницы",
+    "material": "Дуб",
+    "materials": [
+      "Сосна",
+      "Берёза",
+      "Лиственница",
+      "Дуб",
+      "Бук"
+    ],
+    "base_price": 180000,
+    "description": "Классическая деревянная лестница с перилами.",
+    "dimensions": {
+      "length": 3000,
+      "width": 3000,
+      "height": 2500
+    },
+    "image": "/assets/images/hero-reference.png"
+  },
+  {
+    "id": 6,
+    "name": "Лестница «Модерн»",
+    "category": "Лестницы",
+    "material": "Бук",
+    "materials": [
+      "Сосна",
+      "Берёза",
+      "Лиственница",
+      "Дуб",
+      "Бук"
+    ],
+    "base_price": 150000,
+    "description": "Современная лестница из массива дерева.",
+    "dimensions": {
+      "length": 3000,
+      "width": 3000,
+      "height": 2500
+    },
+    "image": "/assets/images/hero-reference.png"
+  },
+  {
+    "id": 7,
+    "name": "Беседка «Премиум»",
+    "category": "Беседки",
+    "material": "Дуб",
+    "materials": [
+      "Сосна",
+      "Берёза",
+      "Лиственница",
+      "Дуб",
+      "Бук"
+    ],
+    "base_price": 200000,
+    "description": "Просторная беседка для отдыха с семьёй.",
+    "dimensions": {
+      "length": 3000,
+      "width": 3000,
+      "height": 2500
+    },
+    "image": "/assets/images/category-reference.png"
+  },
+  {
+    "id": 8,
+    "name": "Дверь «Классика»",
+    "category": "Двери",
+    "material": "Сосна",
+    "materials": [
+      "Сосна",
+      "Берёза",
+      "Лиственница",
+      "Дуб",
+      "Бук"
+    ],
+    "base_price": 35000,
+    "description": "Межкомнатная дверь из натуральной древесины.",
+    "dimensions": {
+      "length": 3000,
+      "width": 3000,
+      "height": 2500
+    },
+    "image": "/assets/images/hero-reference.png"
+  },
+  {
+    "id": 9,
+    "name": "Окно панорамное",
+    "category": "Окна",
+    "material": "Лиственница",
+    "materials": [
+      "Сосна",
+      "Берёза",
+      "Лиственница",
+      "Дуб",
+      "Бук"
+    ],
+    "base_price": 65000,
+    "description": "Большое деревянное окно с панорамным остеклением.",
+    "dimensions": {
+      "length": 3000,
+      "width": 3000,
+      "height": 2500
+    },
+    "image": "/assets/images/hero-reference.png"
+  }
+]
